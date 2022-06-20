@@ -9,7 +9,6 @@ body {
 body.dark {
     display: flex;
     height: 120vh;
-    
     margin:0;
     font-family: 'Montserrat', sans-serif;
     background-image: url("https://images.unsplash.com/photo-1597954874965-17e91acf1492?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80 1770w") ;
@@ -26,10 +25,11 @@ body.dark {
     border-radius: 30px;
     background-color: #000000d0;
     color: white;
+    transition: 0.5s;
 
 }
 .p-box {
-    display: flex;
+
     margin-top: 2.5%;
     margin-bottom: 2.5%;
     margin-left: 5%;
@@ -40,6 +40,7 @@ body.dark {
     border-radius: 30px;
     background-color: #ffffffb2;
     color: black;
+    transition: 0.5s;
 
 }
 
@@ -53,6 +54,8 @@ body.dark {
     height: 40%;
     max-width: 420px;
     margin-top: 5%;
+    transition: 0.5s;
+
 }
 .w-card {
     background-color: #ffffffd0;
@@ -63,6 +66,8 @@ body.dark {
     height: 40%;
     max-width: 420px;
     margin-top: 5%;
+    transition: 0.5s;
+
 }
 
 
@@ -82,6 +87,8 @@ input.w-search-bar {
     font-family: inherit;
     font-size: 120%;
     width: calc(100% - 100px);
+    transition: 0.5s;
+
 }
 input.w-search-bar.dark {
     border: none;
@@ -93,32 +100,71 @@ input.w-search-bar.dark {
     font-family: inherit;
     font-size: 120%;
     width: calc(100% - 100px);
+    transition: 0.5s;
+
 }
 .p-mess {
+    display: flex;
     border: none;
     outline: none;
     padding: 0.5em 1em;
     border-radius: 24px;
-    background: #000000b3;
+    background: #7c7c7c2b;
     color: white;
     font-family: inherit;
     font-size: 120%;
-    width: calc(80% - 100px);
-    margin-right: 5%;
+    width: calc(70% - 100px);
+    margin-right: 2%;
     margin-left: 2%;
-}
-.p-mess.dark {
+    transition: 0.5s;
+
+}.p-mess:hover {
+    display: flex;
     border: none;
     outline: none;
     padding: 0.5em 1em;
     border-radius: 24px;
-    background: #ffffffc0;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(70% - 100px);
+    margin-right: 2%;
+    margin-left: 2%;
+    transition: 0.5s;
+    transform: scale(1.1);
+}
+.p-mess.dark {
+    display: flex;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
     color: black;
     font-family: inherit;
     font-size: 120%;
-    width: calc(80% - 100px);
-    margin-right: 5%;
+    width: calc(70% - 100px);
+    margin-right: 2%;
     margin-left: 2%;
+    transition: 0.5s;
+}
+.p-mess.dark {
+    display: flex;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: black;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(70% - 100px);
+    margin-right: 2%;
+    margin-left: 2%;
+    transition: 0.5s;
+    transform: scale(1.1);
+
 }
 
 .w-button {
@@ -152,89 +198,233 @@ input.w-search-bar.dark {
     background: #7c7c7c6b;
 }
 .p-card {
-    color: white;
-    background-color: #000000b3;
-    border-radius: 10px;
+    border-radius: 40%;
+    color: black;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    background-image: url("https://www.pngkey.com/png/full/129-1293327_coffee-icon-coffee-cup-flat-icon.png");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    width: 17%;
+    height: 72%;    
+    transition: 0.5s;
+
+    
+}
+.p-card:hover {
+    border-radius: 40%;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.pngkey.com/png/full/129-1293327_coffee-icon-coffee-cup-flat-icon.png");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 2%;
+    transition: 0.5s;
+    width: 14%;
+    height: 72%;
+    background-color: rgba(73, 73, 73, 0.366);
+    border-radius: 50%;
 }
 .p-card.dark {
-    color: black;
-    background-color: #ffffffc0;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-.p-card2 {
+    border-radius: 40%;
     color: white;
-    background-color: #000000b3;
-    border-radius: 10px;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    background-image: url("https://www.pngkey.com/png/full/129-1293327_coffee-icon-coffee-cup-flat-icon.png");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    width: 17%;
+    height: 72%;
+}
+.p-card.dark:hover {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://www.pngkey.com/png/full/129-1293327_coffee-icon-coffee-cup-flat-icon.png");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 2%;
+    transition: 0.5s;
+    width: 14%;
+    height: 72%;
+    background-color: rgba(255, 255, 255, 0.366);
+    border-radius: 50%;
+}
+
+
+.p-card2 {
+    border-radius: 40%;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn-icons.flaticon.com/png/512/1903/premium/1903172.png?token=exp=1655748789~hmac=b3b42fc587ef8ffb04add8de25e7df0b");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    width: 17%;
+    height: 72%;
+}
+.p-card2:hover {
+    color: black;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn-icons.flaticon.com/png/512/1903/premium/1903172.png?token=exp=1655748789~hmac=b3b42fc587ef8ffb04add8de25e7df0b");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 2%;
+    transition: 0.5s;
+    width: 14%;
+    height: 72%;
+    background-color: rgba(73, 73, 73, 0.366);
+    border-radius: 50%;
 }
 .p-card2.dark {
-    color: black;
-    background-color: #ffffffc0;
-    border-radius: 10px;
+    border-radius: 40%;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn-icons.flaticon.com/png/512/1903/premium/1903172.png?token=exp=1655748789~hmac=b3b42fc587ef8ffb04add8de25e7df0b");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    width: 17%;
+    height: 72%;
+
+}
+.p-card2.dark:hover {
+    color: white;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    background-image: url("https://cdn-icons.flaticon.com/png/512/1903/premium/1903172.png?token=exp=1655748789~hmac=b3b42fc587ef8ffb04add8de25e7df0b");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 2%;
+    transition: 0.5s;
+    width: 14%;
+    height: 72%;
+    background-color: rgba(255, 255, 255, 0.366);
+    border-radius: 50%;
+
 }
 .p-card3 {
-    color: white;
-    background-color: #000000b3;
-    border-radius: 10px;
+    border-radius: 40%;
+    color: black;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1802/1802977.png");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    width: 20%;
+    height: 78%;
+
+}
+.p-card3:hover {
+    color: black;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1802/1802977.png");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    margin: 0%;
+    transition: 0.5s;
+    width: 14%;
+    height: 72%;
+    background-color: rgba(73, 73, 73, 0.366);
+    border-radius: 50%;
+    margin: 2%;
+
 }
 .p-card3.dark {
-    color: black;
-    background-color: #ffffffc0;
-    border-radius: 10px;
+    border-radius: 40%;
+    color: white;
     justify-content: center;
     align-items: center;
-    border-radius: 10px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1802/1802977.png");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+    width: 20%;
+    height: 78%;
+
+}
+.p-card3.dark:hover {
+    color: white;
+    justify-content: center;
+    align-items: center;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/1802/1802977.png");
+    background-position: center;
+    background-size:contain;
+    background-repeat: no-repeat;
+    padding-top: 1%;
+    transition: 0.5s;
+    width: 14%;
+    height: 72%;
+    background-color: rgba(73, 73, 73, 0.366);
+    border-radius: 50%;
+    margin: 2%;
+
 }
 .p-icon {
-    color: white;
-    background-color: #000000b3;
-    border-radius: 10px;
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png");
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
 }
-.p-icon.dark {
-    color: black;
-    background-color: #ffffffc0;
-    border-radius: 10px;
+.p-icon:hover {
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png");
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.2);
 }
-.p-icon2 {
-    color: white;
-    background-color: #000000b3;
-    border-radius: 10px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-}
-.p-icon2.dark {
 
+.p-icon2 {
+    display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-        background: #f09433; 
-      background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-      background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-      background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2769 50%,#cc239f 75%,#d712a2 100%); 
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    background-image: url("https://cdn-icons-png.flaticon.com/512/2111/2111463.png");
+    background-position: center;
+    background-size: cover;
+    transition: 0.5s;
 }
+.p-icon2:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    background-image: url("https://cdn-icons-png.flaticon.com/512/2111/2111463.png");
+    background-position: center;
+    background-size: cover;
+    transform: scale(1.2)
+}
+
 .insta {
+    justify-content: center;
+    align-items: center;
+    display: flex;
     width: 100%;
     height: 100%;
     border: none;
@@ -244,6 +434,25 @@ input.w-search-bar.dark {
     color:white
 }
 .insta:hover {
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    transition: 0.5s;
+    background-color: rgba(255, 255, 255, 0.366);
+}
+.linkedin {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border: none;
+    background: none;
+    background-color: none;
+    border-color: none;
+    color:white
+}
+.linkedin:hover {
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -323,4 +532,11 @@ input.w-search-bar.dark {
 }
 h1.w-temp {
     margin: 0px;
+}
+
+#info {
+    transition: 0.5s;
+}
+#info:hover {
+    transform: scale(1.1);
 }
