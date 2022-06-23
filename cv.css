@@ -5,6 +5,8 @@ body {
     margin:0;
     font-family: 'Montserrat', sans-serif;
     background-image: url("https://images.unsplash.com/photo-1503197979108-c824168d51a8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1633&q=80 1633w") ;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 body.dark {
     display: flex;
@@ -12,6 +14,9 @@ body.dark {
     margin:0;
     font-family: 'Montserrat', sans-serif;
     background-image: url("https://images.unsplash.com/photo-1597954874965-17e91acf1492?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80 1770w") ;
+    background-repeat: no-repeat;
+    background-position: center;
+    
 }
 .p-box.dark {   
     display: flex;
@@ -78,6 +83,7 @@ body.dark {
 }
 
 input.w-search-bar {
+    margin-top: 20%;
     border: none;
     outline: none;
     padding: 0.5em 1em;
@@ -91,6 +97,7 @@ input.w-search-bar {
 
 }
 input.w-search-bar.dark {
+    margin-top: 20%;
     border: none;
     outline: none;
     padding: 0.5em 1em;
@@ -103,39 +110,86 @@ input.w-search-bar.dark {
     transition: 0.5s;
 
 }
+input.w-search-bar:hover {
+    transform: scale(1.1);
+
+}
+input.w-search-bar.dark:hover {
+    transform: scale(1.1);
+
+}
+.p-name {
+    position: absolute;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: black;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(20% - 100px);
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-left: 9%;
+    transition: 0.5s;
+
+}
+.p-name.on {
+    position: absolute;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: black;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(20% - 100px);
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-left: 9%;
+    transition: 0.5s;
+    animation: colors1 0.5s linear;
+}
+@keyframes colors1 {
+    0% {
+        background: #7c7c7c2b;
+    }
+    50% {
+        background: #34020260;
+    }
+    100% {
+        background: #7c7c7c2b;
+    }
+}
+
+.p-name:hover {
+    transform: scale(1.1);
+}
+.p-name.dark {
+    position: absolute;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(20% - 100px);
+    margin-right: 1%;
+    margin-top: 2%;
+    margin-left: 9%;
+    transition: 0.5s;
+}
+.p-name.dark:hover {
+    transform: scale(1.1);
+
+}
+
 .p-mess {
-    display: flex;
-    border: none;
-    outline: none;
-    padding: 0.5em 1em;
-    border-radius: 24px;
-    background: #7c7c7c2b;
-    color: white;
-    font-family: inherit;
-    font-size: 120%;
-    width: calc(70% - 100px);
-    margin-right: 2%;
-    margin-left: 2%;
-    transition: 0.5s;
-
-}.p-mess:hover {
-    display: flex;
-    border: none;
-    outline: none;
-    padding: 0.5em 1em;
-    border-radius: 24px;
-    background: #7c7c7c2b;
-    color: white;
-    font-family: inherit;
-    font-size: 120%;
-    width: calc(70% - 100px);
-    margin-right: 2%;
-    margin-left: 2%;
-    transition: 0.5s;
-    transform: scale(1.1);
-}
-.p-mess.dark {
-    display: flex;
+    position: absolute;
     border: none;
     outline: none;
     padding: 0.5em 1em;
@@ -144,13 +198,15 @@ input.w-search-bar.dark {
     color: black;
     font-family: inherit;
     font-size: 120%;
-    width: calc(70% - 100px);
-    margin-right: 2%;
-    margin-left: 2%;
+    width: calc(28% - 100px);
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-left: 9%;
     transition: 0.5s;
+
 }
-.p-mess.dark {
-    display: flex;
+.p-mess.on {
+    position: absolute;
     border: none;
     outline: none;
     padding: 0.5em 1em;
@@ -159,16 +215,41 @@ input.w-search-bar.dark {
     color: black;
     font-family: inherit;
     font-size: 120%;
-    width: calc(70% - 100px);
-    margin-right: 2%;
-    margin-left: 2%;
+    width: calc(28% - 100px);
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-left: 9%;
     transition: 0.5s;
+    animation: colors1 0.5s linear;
+}
+.p-mess:hover {
+    transform: scale(1.1);
+}
+.p-mess.dark {
+    position: absolute;
+    border: none;
+    outline: none;
+    padding: 0.5em 1em;
+    border-radius: 24px;
+    background: #7c7c7c2b;
+    color: white;
+    font-family: inherit;
+    font-size: 120%;
+    width: calc(28% - 100px);
+    margin-right: 1%;
+    margin-top: 5%;
+    margin-left: 9%;
+    transition: 0.5s;
+}
+.p-mess.dark:hover {
     transform: scale(1.1);
 
 }
+
 
 .w-button {
-    margin: 00.5em;
+    margin-top: 20%;
+    margin-left: 4%;
     border-radius: 50%;
     border: none;
     height: 46px;
@@ -183,7 +264,8 @@ input.w-search-bar.dark {
     background: #7c7c7c6b;
 }
 .w-button.dark {
-    margin: 00.5em;
+    margin-top: 20%;
+    margin-left: 4%;
     border-radius: 50%;
     border: none;
     height: 46px;
@@ -197,6 +279,45 @@ input.w-search-bar.dark {
 .w-button.dark:hover {
     background: #7c7c7c6b;
 }
+.s-button {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 25.5%;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    background-image: url(/others/message.png);
+    background-color: none;
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.s-button:hover {
+    transform: scale(1.2);
+}
+.s-button.on {
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 25.5%;
+    border-radius: 50%;
+    border: none;
+    height: 40px;
+    width: 40px;
+    outline: none;
+    background-image: url(/others/reload.png);
+    background-color: none;
+    background-position:center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: 0.5s;
+    animation: load-animation 0.5s infinite linear;
+}
+
 .p-card {
     border-radius: 40%;
     color: black;
@@ -213,20 +334,8 @@ input.w-search-bar.dark {
     
 }
 .p-card:hover {
-    border-radius: 40%;
-    color: black;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://www.pngkey.com/png/full/129-1293327_coffee-icon-coffee-cup-flat-icon.png");
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    margin: 2%;
-    transition: 0.5s;
-    width: 14%;
-    height: 72%;
-    background-color: rgba(73, 73, 73, 0.366);
-    border-radius: 50%;
+    transform: scale(1.1);
+
 }
 .p-card.dark {
     border-radius: 40%;
@@ -242,19 +351,8 @@ input.w-search-bar.dark {
     height: 72%;
 }
 .p-card.dark:hover {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://www.pngkey.com/png/full/129-1293327_coffee-icon-coffee-cup-flat-icon.png");
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    margin: 2%;
-    transition: 0.5s;
-    width: 14%;
-    height: 72%;
-    background-color: rgba(255, 255, 255, 0.366);
-    border-radius: 50%;
+    transform: scale(1.1);
+
 }
 
 
@@ -272,19 +370,8 @@ input.w-search-bar.dark {
     height: 72%;
 }
 .p-card2:hover {
-    color: black;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://cdn-icons.flaticon.com/png/512/1903/premium/1903172.png?token=exp=1655748789~hmac=b3b42fc587ef8ffb04add8de25e7df0b");
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    margin: 2%;
-    transition: 0.5s;
-    width: 14%;
-    height: 72%;
-    background-color: rgba(73, 73, 73, 0.366);
-    border-radius: 50%;
+    transform: scale(1.1);
+
 }
 .p-card2.dark {
     border-radius: 40%;
@@ -301,20 +388,7 @@ input.w-search-bar.dark {
 
 }
 .p-card2.dark:hover {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-image: url("https://cdn-icons.flaticon.com/png/512/1903/premium/1903172.png?token=exp=1655748789~hmac=b3b42fc587ef8ffb04add8de25e7df0b");
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    margin: 2%;
-    transition: 0.5s;
-    width: 14%;
-    height: 72%;
-    background-color: rgba(255, 255, 255, 0.366);
-    border-radius: 50%;
+transform: scale(1.1);
 
 }
 .p-card3 {
@@ -332,21 +406,7 @@ input.w-search-bar.dark {
 
 }
 .p-card3:hover {
-    color: black;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/1802/1802977.png");
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    margin: 0%;
-    transition: 0.5s;
-    width: 14%;
-    height: 72%;
-    background-color: rgba(73, 73, 73, 0.366);
-    border-radius: 50%;
-    margin: 2%;
-
+    transform: scale(1.1);
 }
 .p-card3.dark {
     border-radius: 40%;
@@ -363,24 +423,15 @@ input.w-search-bar.dark {
 
 }
 .p-card3.dark:hover {
-    color: white;
-    justify-content: center;
-    align-items: center;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/1802/1802977.png");
-    background-position: center;
-    background-size:contain;
-    background-repeat: no-repeat;
-    padding-top: 1%;
-    transition: 0.5s;
-    width: 14%;
-    height: 72%;
-    background-color: rgba(73, 73, 73, 0.366);
-    border-radius: 50%;
-    margin: 2%;
+transform: scale(1.1);
 
 }
 .p-icon {
-    display: flex;
+    margin-left: 5%;
+    margin-top: 3%;
+    width: 3%;
+    height: 7%;
+    position: absolute;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -390,18 +441,15 @@ input.w-search-bar.dark {
     transition: 0.5s;
 }
 .p-icon:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png");
-    background-position: center;
-    background-size: cover;
     transform: scale(1.2);
 }
 
 .p-icon2 {
-    display: flex;
+    margin-left: 1%;
+    margin-top: 3%;
+    width: 3%;
+    height: 7%;
+    position:absolute;
     justify-content: center;
     align-items: center;
     border-radius: 10px;
@@ -411,13 +459,6 @@ input.w-search-bar.dark {
     transition: 0.5s;
 }
 .p-icon2:hover {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/2111/2111463.png");
-    background-position: center;
-    background-size: cover;
     transform: scale(1.2)
 }
 
@@ -434,11 +475,9 @@ input.w-search-bar.dark {
     color:white
 }
 .insta:hover {
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     transition: 0.5s;
-    background-color: rgba(255, 255, 255, 0.366);
+    background-color: rgba(255, 255, 255, 0.214);
 }
 .linkedin {
     justify-content: center;
@@ -453,11 +492,9 @@ input.w-search-bar.dark {
     color:white
 }
 .linkedin:hover {
-    justify-content: center;
-    align-items: center;
     border-radius: 10px;
     transition: 0.5s;
-    background-color: rgba(255, 255, 255, 0.366);
+    background-color: rgba(255, 255, 255, 0.214);
 }
 .p-power {
     float: right;
@@ -482,10 +519,11 @@ input.w-search-bar.dark {
     background: #7c7c7c2b;
     color: black;
     cursor: pointer;
-    transition: 0.5 ease-in-out;
+    transition: 0.7 ease-in-out;
 }
 .p-button:hover {
     background: #7c7c7c6b;
+    transform: scale(1.1);
 }
 .p-button.dark {  
     margin: 00.5em;
@@ -502,8 +540,6 @@ input.w-search-bar.dark {
 .p-button.dark:hover {
     background: #7c7c7c6b;
 }
-
-
 
 
 .w-description {
@@ -539,4 +575,86 @@ h1.w-temp {
 }
 #info:hover {
     transform: scale(1.1);
+}
+.game-board {
+    position: relative;
+    overflow: hidden;
+    background-color: #7c7c7c2b;
+    border-radius: 30px;
+    display: flex;
+    width: 70%;
+    height: 45%;
+    float:right;
+    align-items: center;
+    margin-top: 8%;
+    transition: 0.5s;
+}
+
+.mario {
+    width: 130px;
+    position: absolute;
+    bottom: 0%;
+}
+.jump {
+    animation: jump 500ms ease-out;
+}
+.pipe {
+    width: 80px;
+    position: absolute;
+    bottom: 0%;
+    animation: pipe-animation 1.5s infinite linear;
+}
+.clouds{
+    position: absolute;
+    width: 400px;
+    animation: clouds-animation 20s infinite linear;
+}
+.start-mario {
+    bottom: 70%;
+    left: 37.5%;
+    position: absolute;
+    float: center;
+    width: 100px;
+}
+.start-mario:hover {
+    transform: scale(1.2);
+}
+@keyframes clouds-animation {
+    from {
+        right: -400px;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes load-animation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pipe-animation {
+    from {
+        right: -80px;
+    }
+    to {
+        right: 100%;
+    }
+}
+@keyframes jump {
+    0% {
+        bottom: 0%;
+    }
+    50% {
+        bottom:200px;
+    }
+    65% {
+        bottom:200px;
+    }
+    100% {
+        bottom: 0%;
+    }
 }
