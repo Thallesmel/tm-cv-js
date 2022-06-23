@@ -32,7 +32,7 @@ const handleSubmit = () => {
             },
             body: JSON.stringify({ name, message}),
         }).then(() => {
-            alert('message sended')
+            alert('Thank you for the message!!!')
             removeLoading()
         });
     }
@@ -42,13 +42,18 @@ document.querySelector('form').addEventListener('submit', handleSubmit)
 let weather = {
     "apiKey": "0f002a5dc84ab64ec8dbabb017c8b58f",
     fetchWeather: function (city) {
-        fetch(
-            "https://api.openweathermap.org/data/2.5/weather?q="
-            + city 
-            +"&units=matric&appid=" 
-            + this.apiKey)
-        .then((response) => response.json())
-        .then((data) => this.displayWeather(data))
+        if (city !== '') {
+            fetch(
+                "https://api.openweathermap.org/data/2.5/weather?q="
+                + city 
+                +"&units=matric&appid=" 
+                + this.apiKey)
+            .then((response) => response.json())
+            .then((data) => this.displayWeather(data))
+        } else {
+            document.querySelector('.w-search-bar').placeholder = 'Please find your weather here';
+            document.querySelector('.w-search-bar').classList.toggle('on');
+        }
     },
     displayWeather: function(data) {
         const { name } = data;
