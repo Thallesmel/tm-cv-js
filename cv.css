@@ -70,7 +70,21 @@ body.dark {
     width: 40%;
     height: 40%;
     max-width: 420px;
-    margin-top: 5%;
+    margin-top: 2.5%;
+    transition: 0.5s;
+
+}
+.o-card {
+    top: 65%;
+    right: 4%;
+    position: absolute;
+    background-color: #ffffffd0;
+    color: black;
+    padding: 2em;
+    border-radius: 30px;
+    width: 40%;
+    height: 42%;
+    max-width: 420px;
     transition: 0.5s;
 
 }
@@ -486,7 +500,9 @@ transform: scale(1.1);
     background: none;
     background-color: none;
     border-color: none;
-    color:white
+    color:white;
+    border-radius: 10px;
+
 }
 .insta:hover {
     border-radius: 10px;
