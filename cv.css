@@ -303,7 +303,7 @@ input.w-search-bar.dark:hover {
     height: 40px;
     width: 40px;
     outline: none;
-    background-image: url(/others/message.png);
+    background-image: url(message.png);
     background-color: none;
     background-position:center;
     background-size: contain;
@@ -323,7 +323,7 @@ input.w-search-bar.dark:hover {
     height: 40px;
     width: 40px;
     outline: none;
-    background-image: url(/others/reload.png);
+    background-image: url(reload.png);
     background-color: none;
     background-position:center;
     background-size: contain;
@@ -338,7 +338,7 @@ input.w-search-bar.dark:hover {
     color: black;
     justify-content: center;
     align-items: center;
-    background-image: url("https://www.pngkey.com/png/full/129-1293327_coffee-icon-coffee-cup-flat-icon.png");
+    background-image: url("pngkey.com-coffee-icon-png-1293327.png");
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
@@ -357,7 +357,7 @@ input.w-search-bar.dark:hover {
     color: white;
     justify-content: center;
     align-items: center;
-    background-image: url("https://www.pngkey.com/png/full/129-1293327_coffee-icon-coffee-cup-flat-icon.png");
+    background-image: url("pngkey.com-coffee-icon-png-1293327.png");
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
@@ -376,7 +376,7 @@ input.w-search-bar.dark:hover {
     color: black;
     justify-content: center;
     align-items: center;
-    background-image: url("https://cdn-icons.flaticon.com/png/512/1903/premium/1903172.png?token=exp=1655748789~hmac=b3b42fc587ef8ffb04add8de25e7df0b");
+    background-image: url("studying.png");
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
@@ -393,7 +393,7 @@ input.w-search-bar.dark:hover {
     color: white;
     justify-content: center;
     align-items: center;
-    background-image: url("https://cdn-icons.flaticon.com/png/512/1903/premium/1903172.png?token=exp=1655748789~hmac=b3b42fc587ef8ffb04add8de25e7df0b");
+    background-image: url("studying.png");
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
@@ -411,14 +411,13 @@ transform: scale(1.1);
     color: black;
     justify-content: center;
     align-items: center;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/1802/1802977.png");
+    background-image: url("programming.png");
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
     transition: 0.5s;
-    width: 20%;
-    height: 78%;
-
+    width: 17%;
+    height: 72%;
 }
 .p-card3:hover {
     transform: scale(1.1);
@@ -428,13 +427,13 @@ transform: scale(1.1);
     color: white;
     justify-content: center;
     align-items: center;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/1802/1802977.png");
+    background-image: url("programming.png");
     background-position: center;
     background-size:contain;
     background-repeat: no-repeat;
     transition: 0.5s;
-    width: 20%;
-    height: 78%;
+    width: 17%;
+    height: 72%;
 
 }
 .p-card3.dark:hover {
@@ -450,7 +449,7 @@ transform: scale(1.1);
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-image: url("https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png");
+    background-image: url("placa-do-github.png");
     background-position: center;
     background-size: cover;
     transition: 0.5s;
@@ -468,7 +467,7 @@ transform: scale(1.1);
     justify-content: center;
     align-items: center;
     border-radius: 10px;
-    background-image: url("https://cdn-icons-png.flaticon.com/512/2111/2111463.png");
+    background-image: url("instagram.png");
     background-position: center;
     background-size: cover;
     transition: 0.5s;
