@@ -64,7 +64,7 @@ let weather = {
         document.querySelector(".w-icon").src =
          "https://openweathermap.org/img/wn/" + icon + ".png";
         document.querySelector(".w-description").innerText = description;
-        document.querySelector(".w-temp").innerText = Math.round(temp/7) + "°C";
+        document.querySelector(".w-temp").innerText = Math.round(temp/11) + "°C";
         document.querySelector(".w-humidity").innerText = "Huminidy: "
          + humidity + "%";
         document.querySelector(".w-wind").innerText = "Wind speed: " + speed + "%";
@@ -83,6 +83,7 @@ document
 document.querySelector('.p-button').addEventListener('click', () => {
     document.body.classList.toggle('dark');
     document.querySelector('.w-card').classList.toggle('dark');
+    document.querySelector('.o-card').classList.toggle('dark');
     document.querySelector('.p-box').classList.toggle('dark');
     document.querySelector('.p-power').classList.toggle('dark');
     document.querySelector('.p-button').classList.toggle('dark');
@@ -143,7 +144,7 @@ const startMario = () => {
             mario.style.width = '80px';
             mario.style.marginLeft = '50px'
 
-            startMarioButton.src ="/mario pics/kindpng_791506.png";
+            startMarioButton.src ="kindpng_791506.png";
             startMarioButton.style.opacity = '0.5';
             startMarioButton.style.height = '33px';
             clearInterval(loop);
@@ -151,4 +152,46 @@ const startMario = () => {
         }
     
     }, 10)
+}
+
+const slideUp = () => {
+    const slideStart = document.querySelector('.slide1');
+    const slideMiddle = document.querySelector('.slide3');
+    const slideEnd = document.querySelector('.slide2');
+
+
+    if (slideMiddle.style.opacity == '1' && slideEnd.style.opacity == '0') {
+        slideStart.style.opacity = '1';
+        slideMiddle.style.opacity = '0';
+        slideEnd.style.opacity = '0';
+    } else if (slideStart.style.opacity = '1') {
+        slideStart.style.opacity = '0';
+        slideMiddle.style.opacity = '1';
+        slideEnd.style.opacity = '0';
+    } else if (slideEnd.style.opacity = '1') {
+        slideMiddle.style.opacity = '1';
+        slideStart.style.opacity = '0';
+        slideEnd.style.opacity = '0';
+    }
+}
+
+const slideDown = () => {
+    const slideStart = document.querySelector('.slide2');
+    const slideMiddle = document.querySelector('.slide3');
+    const slideEnd = document.querySelector('.slide1');
+
+
+    if (slideMiddle.style.opacity == '1' && slideStart.style.opacity == '0') {
+        slideStart.style.opacity = '1';
+        slideMiddle.style.opacity = '0';
+        slideEnd.style.opacity = '0';
+    } else if (slideMiddle.style.opacity = '0') {
+        slideStart.style.opacity = '0';
+        slideMiddle.style.opacity = '1';
+        slideEnd.style.opacity = '0';
+    } else if (slideEnd.style.opacity = '1') {
+        slideMiddle.style.opacity = '1';
+        slideEnd.style.opacity = '0';
+        slideStart.style.opacity = '0';
+    }
 }
