@@ -727,7 +727,7 @@ h1.w-temp {
 
 }
 .firstButton:hover {
-    background: #bebebe84;
+    background: #bebebeb9;
 
 }
 .secondButton {
@@ -746,6 +746,6 @@ h1.w-temp {
     transition: 0.5s;
 }
 .secondButton:hover {
-    background: #bebebe84;
+    background: #bebebeb9;
 
 }
